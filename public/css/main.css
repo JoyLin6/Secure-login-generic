@@ -1,0 +1,142 @@
+html{
+   background-color: #ebebeb;
+
+}
+
+/*  General CSS*/
+.wrapper{
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+    position: relative;
+    background-color: #888d8d;
+}
+
+::selection {color:#ffffff;background:#353434;}
+::-moz-selection {color:#ffffff;background:#353434;}
+
+.feature a,
+.cta a.cta_btn,
+.testimonials #t_navigation a,
+header ul.social li a,
+header nav ul li a{
+	transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+}
+
+
+/*  Services/features  */
+.features{
+    width: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.features .feature{
+    display: block;
+    width: 31.3333%;
+    height: auto;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 50px;
+}
+
+.features .feature:nth-child(3n+0)
+{
+    margin-right: 0;
+}
+
+
+.feature .details_exp{
+    display: block;
+    width: 96%;
+    float: left;
+}
+
+.feature h3{
+    margin-top:10px;
+    margin-bottom: 20px;
+    color: #767575;
+    font-family: "lato_bold", arial;
+    font-size: 21px;
+     letter-spacing: 1px;
+
+}
+
+.feature p{
+    margin-bottom: 20px;
+    color: #9e9e9e;
+    font-family: "lato_regular", arial;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.feature a{
+    color: #ffffff;
+    font-family: "lato_regular", arial;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+.feature a:hover{
+    color: #353434;
+}
+
+.feature a span{
+    font-family: arial;
+    margin-left: 10px;
+}
+#link{
+    margin:10px auto;
+    width:960px;
+    text-align:right
+
+}
+/*  Responsive code  */
+@media (max-width:1200px){
+    .wrapper{
+        padding: 0 40px;
+    }
+    #link{
+        margin:10px auto;
+        width:640px;
+        text-align:right
+
+    }
+}
+
+@media (max-width:700px){
+
+    .features .feature{
+        width: 46.66666666666667%;
+        margin-right: 6.666666666666667%!important;
+    }
+    .features .feature:nth-child(2n+2)
+    {
+        margin-right: 0!important;
+    }
+    #link{
+        margin:10px auto;
+        width:580px;
+        text-align:right
+
+    }
+}
+
+@media (max-width:500px){
+
+    .features .feature{
+        width: 100%;
+        margin-right: 0!important;
+    }
+    #link{
+        margin:10px auto;
+        width:94%;
+        text-align:right
+
+    }
+}

@@ -1,0 +1,125 @@
+html{
+    background:#ffffff;
+
+}
+
+/*  General CSS*/
+.wrapper{
+	max-width: 1200px;
+	height: auto;
+	margin: 0 auto;
+    position: relative;
+    background-color: #ffffff;
+}
+
+::selection {color:#ffffff;background:#ffffff;}
+::-moz-selection {color:#ffffff;background:#ffffff;}
+
+.feature a,
+.cta a.cta_btn,
+.testimonials #t_navigation a,
+header ul.social li a,
+header nav ul li a{
+	transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-moz-transition:all .2s linear;
+	-o-transition:all .2s linear;
+}
+
+
+/*  Services/features  */
+.features{
+    width: 100%;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.features .feature{
+    display: block;
+    width: 31.3333%;
+    height: auto;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 50px;
+}
+
+.features .feature:nth-child(3n+0)
+{
+    margin-right: 0;
+}
+
+
+.feature .details_exp{
+    display: block;
+    width: 96%;
+    float: left;
+
+}
+
+.feature h3{
+    margin-top:10px;
+    margin-bottom: 20px;
+    color: #f30617;
+    font-family: "Arial Regular";
+    font-size: 21px;
+     letter-spacing: 1px;
+
+}
+
+.feature p{
+    margin-bottom: 20px;
+    color: #f30617;
+    font-family: "Arial Regular";
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.feature a{
+    color: #f30617;
+    font-family: "Arial Regular";
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: .5px;
+}
+
+.feature a:hover{
+    color: #f30617;
+}
+
+.feature a span{
+    font-family: 'Arial Regular;
+    margin-left: 10px;
+}
+
+/*  Responsive code  */
+@media (max-width:1200px){
+    .wrapper{
+        padding: 0 5px;
+    }
+
+}
+
+@media (max-width:700px){
+
+    .features .feature{
+        width: 46.66666666666667%;
+        margin-right: 6.666666666666667%!important;
+    }
+    .features .feature:nth-child(2n+2)
+    {
+        margin-right: 0!important;
+    }
+}
+
+@media (max-width:500px){
+
+    /*.features .feature{
+        width: 100%;
+        margin-right: 0!important;
+    }*/
+    #block{
+        clear:both;
+    }
+   
+}

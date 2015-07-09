@@ -1,0 +1,25 @@
+{
+  "name": "passwordless",
+  "private": "true",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.0.2",
+    "cookie-parser": "^1.0.1",
+    "ejs": "~0.8.5",
+    "emailjs": "^0.3.16",
+    "express": "^4.12.3",
+    "express-session": "^1.11.1",
+    "html": "0.0.10",
+    "mongo-store": "0.0.2",
+    "mongodb": "^1.4.35",
+    "mongoose": "^4.0.2",
+    "mongoskin": "^1.4.13",
+    "morgan": "^1.0.1",
+    "passwordless": "^1.0.9",
+    "passwordless-mongostore-bcrypt-node": "^0.1.1",
+    "static-favicon": "^1.0.2"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
